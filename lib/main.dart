@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_golden_ratio_visualization/screens/home.dart';
-import 'package:flutter_golden_ratio_visualization/util/constant.dart';
+import 'package:flutter_golden_ratio_visualization/screens/pattern_screen.dart';
 
 void main() {
-  runApp(const GoldenRationVisualizationApp());
+  runApp(const GoldenRatioApp());
 }
 
-class GoldenRationVisualizationApp extends StatelessWidget {
-  const GoldenRationVisualizationApp({super.key});
+class GoldenRatioApp extends StatelessWidget {
+  const GoldenRatioApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: Constant.appName,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-        useMaterial3: false,
-        scaffoldBackgroundColor: Colors.black,
-      ),
-      home: const HomeScreen(),
+      title: "Golden Ratio Visualization",
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
+      home: const PatternScreen(),
     );
   }
 }
