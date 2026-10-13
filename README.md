@@ -2,6 +2,8 @@
 
 Ten animated patterns built from the golden ratio, φ ≈ 1.618.
 
+**Live demo: https://sharmadhiraj.github.io/Flutter-Golden-Ratio-Visualization/**
+
 ![Demo Gif](demo.gif)
 
 ## Did you know?
